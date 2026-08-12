@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const amount = "80";
             const planName = "Dirt Plan";
 
+            // Normal UPI URI
             const upiUrl = `upi://pay?pa=${encodeURIComponent(MyupiId)}&pn=${encodeURIComponent(planName)}&am=${amount}&cu=INR`;
 
+            // Fallback try: sidhe browser me redirect karne ke liye
             window.location.href = upiUrl;
         });
-    } else {
-        console.log("Button not found!");
     }
 });
