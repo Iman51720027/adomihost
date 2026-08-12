@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="contain">
@@ -12,7 +12,9 @@
             <header class="uper">
                 <h1>adomi hosting</h1>
             </header>
+            
             <hr class="hr1">
+            
             <div class="plans">
                 <div class="pocket-friendly">
                     <div class="plan-detels">
@@ -20,28 +22,35 @@
                             <p>DIRT-PLAN</p>
                             <p>price: 80 inr/month</p>
                             <p>RAM: 2GB</p>
-                            <p>CPU:100%</p>
+                            <p>CPU: 100%</p>
                             <p>SSD: 3GB</p>
                             <p>location: india</p>
+                            
+                            <!-- Button code fixed and aligned -->
                             <div class="dirt-buy">
-                                <button id="buy-dirt-plan">BUY</button>
+                                <a href="intent://pay?pa=9641080857.wallet@phonepe&pn=Dirt%20Plan&am=80&cu=INR#Intent;scheme=upi;package=com.phonepe.app;end" style="text-decoration: none;">
+                                    <button id="buy-dirt-plan" type="button" style="cursor: pointer;">BUY</button>
+                                </a>
                             </div>
                         </div>
                     </div>
-
                 </div>
+                
                 <div class="budget">
-
+                    <!-- Budget plan content -->
                 </div>
+                
                 <div class="primium">
-
+                    <!-- Premium plan content -->
                 </div>
+                
                 <div class="ultra-primium">
-
+                    <!-- Ultra premium plan content -->
                 </div>
             </div>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
